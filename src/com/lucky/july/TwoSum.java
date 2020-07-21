@@ -1,5 +1,7 @@
 package com.lucky.july;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.util.Arrays;
 
 /**
@@ -10,7 +12,7 @@ import java.util.Arrays;
  * @Date 2020/7/20 13:52
  */
 public class TwoSum {
-    public int[] twoSum(int[] nums, int target) {
+    public int[] twoSum(int @NotNull [] nums, int target) {
         int[] result = new int[2];
         for (int i = 0; i < nums.length; i++) {
             for (int j = i+1; j < nums.length; j++) {
